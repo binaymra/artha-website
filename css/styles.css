@@ -39,15 +39,15 @@
   /* Sector colours */
   --fin-green:    #00d67a;
   --fin-green-dk: #00a85e;
-  --fin-dark:     #020c05;
+  --fin-dark:     #050c1f;
   --fin-red:      #ff4d6a;
-  --agri-dark:    #0b2210;
-  --agri-mid:     #1b5225;
-  --agri-light:   #2d8a3e;
+  --agri-dark:    #0a1232;
+  --agri-mid:     #1B2A5B;
+  --agri-light:   #2e4585;
   --re-dark:      #0a1626;
   --re-mid:       #162d4f;
   --re-light:     #1e3d6e;
-  --market-dark:  #030e08;
+  --market-dark:  #050c1f;
 }
 
 /* ---------- Reset & Base ---------- */
@@ -157,13 +157,13 @@ p  { color: var(--gray-500); font-size: 1rem; }
 .hero {
   position: relative; min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(140deg, #000000 0%, #040c14 35%, #000000 65%, #060d1a 100%);
+  background: linear-gradient(140deg, #060c1e 0%, #0a1535 35%, #060c1e 65%, #0d1545 100%);
   overflow: hidden;
 }
 .hero::before {
   content: ''; position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 55% 50% at 88% 40%, rgba(0,214,122,.07) 0%, transparent 60%),
+    radial-gradient(ellipse 55% 50% at 88% 40%, rgba(200,162,76,.07) 0%, transparent 60%),
     radial-gradient(ellipse 40% 55% at 8%  85%, rgba(200,162,76,.08) 0%, transparent 55%),
     radial-gradient(ellipse 45% 40% at 50% 5%,  rgba(200,162,76,.05) 0%, transparent 60%),
     radial-gradient(ellipse 50% 60% at 15% 20%, rgba(0,100,200,.04)  0%, transparent 55%);
@@ -262,8 +262,8 @@ p  { color: var(--gray-500); font-size: 1rem; }
    ====================================================== */
 .market-ticker {
   background: var(--market-dark);
-  border-top: 1px solid rgba(0,214,122,.22);
-  border-bottom: 1px solid rgba(0,214,122,.1);
+  border-top: 1px solid rgba(200,162,76,.25);
+  border-bottom: 1px solid rgba(200,162,76,.12);
   height: 40px;
   display: flex; align-items: stretch;
   overflow: hidden;
@@ -312,7 +312,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 .ti.down     em { color: var(--fin-red);    font-style: normal; font-weight: 700; }
 .ti.crypto   em { color: var(--gold-light); font-style: normal; font-weight: 700; }
 .ti.crypto    b { color: var(--gold-light); }
-.ti-sep { color: rgba(0,214,122,.18); padding: 0 2px; }
+.ti-sep { color: rgba(200,162,76,.25); padding: 0 2px; }
 .ti-section-sep {
   display: inline-flex; align-items: center;
   padding: 0 14px;
@@ -328,9 +328,9 @@ p  { color: var(--gray-500); font-size: 1rem; }
    STATS STRIP
    ====================================================== */
 .stats-strip {
-  background: #050f08;
+  background: #0a1232;
   padding: 52px 0;
-  border-bottom: 1px solid rgba(0,214,122,.08);
+  border-bottom: 1px solid rgba(200,162,76,.12);
   position: relative;
 }
 .stats-strip::before {
@@ -366,14 +366,14 @@ p  { color: var(--gray-500); font-size: 1rem; }
 }
 .about-image-bg {
   position: absolute; inset: 0; border-radius: var(--radius-xl);
-  background: linear-gradient(145deg, #040c14 0%, var(--navy) 55%, #04100a 100%);
+  background: linear-gradient(145deg, #0a1232 0%, var(--navy) 55%, #0d1b40 100%);
   overflow: hidden;
 }
 .about-image-bg::before {
   content: '';
   position: absolute; inset: 0;
   background:
-    radial-gradient(circle at 25% 75%, rgba(0,214,122,.12) 0%, transparent 50%),
+    radial-gradient(circle at 25% 75%, rgba(200,162,76,.12) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(200,162,76,.12) 0%, transparent 45%);
 }
 .about-image-bg::after {
@@ -444,8 +444,8 @@ p  { color: var(--gray-500); font-size: 1rem; }
 .india-badge { background: rgba(224,123,26,.12); color: var(--saffron); }
 
 .org-root   { background: var(--navy); border: 1px solid rgba(200,162,76,.4); }
-.org-us     { background: var(--white); border: 1px solid var(--border-gold); }
-.org-india  { background: var(--white); border: 1px solid var(--border-gold); }
+.org-us     { background: var(--ivory); border: 1px solid var(--border-gold); }
+.org-india  { background: var(--ivory); border: 1px solid var(--border-gold); }
 
 .org-entity-name {
   font-family: var(--font-display);
@@ -517,7 +517,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 .org-sub-card {
   flex: 1;
   position: relative;
-  background: var(--white);
+  background: var(--ivory);
   border-radius: var(--radius-lg);
   padding: 28px 20px 24px;
   box-shadow: var(--shadow-sm);
@@ -592,7 +592,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 }
 /* Capital Management — market trading black-green */
 .invest-top {
-  background: linear-gradient(160deg, var(--market-dark) 0%, #061812 55%, #0c2215 100%);
+  background: linear-gradient(160deg, var(--market-dark) 0%, #0a1535 55%, var(--navy) 100%);
 }
 
 .company-icon-wrap {
@@ -608,7 +608,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 }
 
 .company-card-body {
-  padding: 28px; background: var(--white); flex: 1; display: flex; flex-direction: column;
+  padding: 28px; background: var(--ivory); flex: 1; display: flex; flex-direction: column;
 }
 .company-card-body h3 {
   font-family: var(--font-display); color: var(--navy);
@@ -687,7 +687,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 }
 .why-card {
   padding: 36px 24px;
-  background: var(--white); border-radius: var(--radius-lg);
+  background: var(--ivory); border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm); border-top: 4px solid var(--gold);
   transition: transform var(--transition), box-shadow var(--transition);
 }
@@ -712,7 +712,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
   grid-template-columns: 280px 1fr;
   gap: 60px;
   align-items: flex-start;
-  background: var(--white);
+  background: var(--ivory);
   border-radius: var(--radius-xl);
   border: 1px solid var(--border-gold);
   box-shadow: var(--shadow-md);
@@ -803,7 +803,7 @@ p  { color: var(--gray-500); font-size: 1rem; }
 .contact-item a:hover { color: var(--gold); }
 
 .contact-form {
-  background: var(--white); border-radius: var(--radius-xl);
+  background: var(--ivory); border-radius: var(--radius-xl);
   padding: 44px; box-shadow: var(--shadow-md);
   border: 1px solid var(--border-gold);
 }
